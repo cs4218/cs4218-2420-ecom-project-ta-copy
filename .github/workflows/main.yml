@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +29,5 @@ jobs:
           cd client
           npm install
 
-  test:
       - name: Run Jest tests
         run: npm test
